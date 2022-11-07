@@ -1,0 +1,13 @@
+The files 
+	
+	"Algorithms/Genetic/NSGA-II.py", 
+	"Algorithms/Genetic/Genetic_Utils/General_Utils.py",
+	"Algorithms/Genetic/Genetic_Utils/Survival_Strategy.py"
+
+contain code parts that are retrieved and/or take inspiration by the pymoo library (https://pymoo.org/, https://github.com/anyoptimization/pymoo). Then, they are under the following copyright:
+
+"""
+Copyright (C) 2013-2017 Docker, Inc. - Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at https://www.apache.org/licenses/LICENSE-2.0
+"""
