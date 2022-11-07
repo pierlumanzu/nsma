@@ -85,6 +85,6 @@ The execution results are saved in the ```Execution_Outputs``` folder. In ```Gen
 If you have any question, feel free to contact me:
 
 [Pierluigi Mansueto](https://webgol.dinfo.unifi.it/pierluigi-mansueto/)<br>
-Global Optimization Laboratory ([GOL](https://webgol.dinfo.unifi.it/GOL))<br>
+Global Optimization Laboratory ([GOL](https://webgol.dinfo.unifi.it/))<br>
 University of Florence<br>
 Email: pierluigi dot mansueto at unifi dot it
