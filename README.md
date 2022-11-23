@@ -7,21 +7,23 @@
 
 Implementation of the NSMA algorithm proposed in
 
-[Lapucci, M., Mansueto, P., & Schoen, F. (2022). A Memetic Procedure for Global Multi-Objective Optimization. arXiv preprint arXiv:2201.11444.](
-https://doi.org/10.48550/arXiv.2201.11444)
+[Lapucci, M., Mansueto, P. & Schoen, F. A memetic procedure for global multi-objective optimization. Math. Prog. Comp. (2022).](
+https://doi.org/10.1007/s12532-022-00231-3)
 
 If you have used our code for research purposes, please cite the publication mentioned above.
 For the sake of simplicity, we provide the Bibtex format:
 
 ```
-@misc{nsma,
-  doi = {10.48550/ARXIV.2201.11444},
-  url = {https://arxiv.org/abs/2201.11444},
-  author = {Lapucci, Matteo and Mansueto, Pierluigi and Schoen, Fabio},
-  title = {A Memetic Procedure for Global Multi-Objective Optimization},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {arXiv.org perpetual, non-exclusive license}
+@Article{Lapucci2022,
+    author={Lapucci, Matteo and Mansueto, Pierluigi and Schoen, Fabio},
+    title={A memetic procedure for global multi-objective optimization},
+    journal={Mathematical Programming Computation},
+    year={2022},
+    month={Nov},
+    day={22},
+    issn={1867-2957},
+    doi={10.1007/s12532-022-00231-3},
+    url={https://doi.org/10.1007/s12532-022-00231-3}
 }
 ```
 
