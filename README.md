@@ -84,10 +84,10 @@ The execution results are saved in the ```Execution_Outputs``` folder. In ```Gen
 
 ### Python Library
 
-The code is also proposed as Python package. In order to use it, execute the following command under your conda environment:
+The code is also proposed as [Python package](https://pypi.org/project/nsma/). In order to use it, execute the following command under your conda environment:
 
 ```
-pip install nsma==0.0.2
+pip install nsma
 ```
 
 Note that, for a successful installation, you need Python v3.10.6 in your Conda environment.
