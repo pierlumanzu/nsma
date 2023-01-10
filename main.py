@@ -14,7 +14,7 @@ from general_utils.pareto_utils import points_initialization, points_postprocess
 from general_utils.progress_bar import ProgressBarWrapper
 
 from constants import PROBLEM_DIMENSIONALITIES
-from parser_management import getArgs
+from parser_management import get_args
 
 
 if __name__ == '__main__':
@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
     # Arguments management. #
 
-    args = getArgs()
+    args = get_args()
 
     print_parameters(args)
     algorithms_names, problems, n_problems, seeds, general_settings, algorithms_settings, DDS_settings, ALS_settings = args_preprocessing(args)

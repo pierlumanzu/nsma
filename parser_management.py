@@ -2,7 +2,7 @@ import argparse
 import sys
 
 
-def getArgs():
+def get_args():
 
     parser = argparse.ArgumentParser(description='memetic and genetic algorithms for Global Multi-Objective Optimization')
 
