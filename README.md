@@ -82,6 +82,59 @@ Given a terminal (an Anaconda prompt, if you are a Windows user), an example of 
 
 The execution results are saved in the ```Execution_Outputs``` folder. In ```General_Utils/Management_Utils.py``` and ```General_Utils/Args_Utils.py```, you can find all the documentation about how the outputs are stored.
 
+### Python Library
+
+The code is also proposed as Python package. In order to use it, execute the following command under your conda environment:
+
+```
+pip install nsma==0.0.2
+```
+
+Note that, for a successful installation, you need Python v3.10.6 in your Conda environment.
+
+Below, an example of library usage is proposed.
+
+```python
+import tensorflow as tf
+from nsma.algorithms.memetic.nsma import NSMA
+from nsma.problems.man.man_instance import MAN1
+from nsma.general_utils.pareto_utils import points_initialization
+
+tf.compat.v1.disable_eager_execution()
+
+session = tf.compat.v1.Session()
+with session.as_default():
+    algorithm = NSMA(max_iter=None, 
+                     max_time=2, 
+                     max_f_evals=None, 
+                     verbose=True, 
+                     verbose_interspace=10, 
+                     plot_pareto_front=True, 
+                     plot_pareto_solutions=False, 
+                     plot_dpi=100, 
+                     pop_size=100, 
+                     crossover_probability=0.9, 
+                     crossover_eta=20, 
+                     mutation_eta=20, 
+                     shift=10, 
+                     crowding_quantile=0.9, 
+                     n_opt=5, 
+                     FMOPG_max_iter=5, 
+                     theta_for_stationarity=-1e-10, 
+                     theta_tol=-1e-1, 
+                     theta_dec_factor=10**(-0.5), 
+                     gurobi=True, 
+                     gurobi_method=1, 
+                     gurobi_verbose=False, 
+                     ALS_alpha_0=1, 
+                     ALS_delta=0.5, 
+                     ALS_beta=10**-4, 
+                     ALS_min_alpha=1e-7)
+    problem = MAN1(n=5)
+    initial_p_list, initial_f_list, n_initial_points = points_initialization(problem, 'hyper', 5)
+    p_list, f_list, elapsed_time = algorithm.search(initial_p_list, initial_f_list, problem)
+```
+
 ### Contact
 
 If you have any question, feel free to contact me:
