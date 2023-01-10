@@ -4,19 +4,19 @@ import sys
 
 def getArgs():
 
-    parser = argparse.ArgumentParser(description='Memetic and Genetic Algorithms for Global Multi-Objective Optimization')
+    parser = argparse.ArgumentParser(description='memetic and genetic algorithms for Global Multi-Objective Optimization')
 
-    parser.add_argument('-a', '--algorithms', type=str, help='Algorithms to execute', nargs='+', choices=['NSMA', 'NSGA-II'])
+    parser.add_argument('-a', '--algorithms', type=str, help='algorithms to execute', nargs='+', choices=['NSMA', 'NSGA-II'])
 
-    parser.add_argument('-p', '--problems', help='Family Problem to test', nargs='+', choices=['MAN', 'ZDT', 'MOP'])
+    parser.add_argument('-p', '--problems', help='Family Problem to test', nargs='+', choices=['MAN'])
 
     parser.add_argument('-s', '--seeds', help='Seeds for the pseudo-random number generator', nargs='+', type=int)
 
-    parser.add_argument('-mi', '--max_iter', help='Maximum number of iterations for an algorithm on a problem', default=None, type=int)
+    parser.add_argument('-mi', '--max_iter', help='Maximum number of iterations for an Algorithm on a problem', default=None, type=int)
 
-    parser.add_argument('-mt', '--max_time', help='Maximum number of elapsed minutes for an algorithm on a problem', default=None, type=float)
+    parser.add_argument('-mt', '--max_time', help='Maximum number of elapsed minutes for an Algorithm on a problem', default=None, type=float)
 
-    parser.add_argument('-mfe', '--max_f_evals', help='Maximum number of function evaluations for an algorithm on a problem', default=None, type=int)
+    parser.add_argument('-mfe', '--max_f_evals', help='Maximum number of function evaluations for an Algorithm on a problem', default=None, type=int)
 
     parser.add_argument('-v', '--verbose', help='Verbose during the algorithms iterations', action='store_true', default=False)
 
@@ -26,9 +26,9 @@ def getArgs():
 
     parser.add_argument('-pps', '--plot_pareto_solutions', help='Plot Pareto solutions during the algorithms iterations (Requirements: plot_pareto_front activated; n in [2, 3])', action='store_true', default=False)
 
-    parser.add_argument('-oeppf', '--only_end_plot_pareto_front', help='Plot Pareto front only at the end of the algorithm execution', action='store_true', default=False)
+    parser.add_argument('-oeppf', '--only_end_plot_pareto_front', help='Plot Pareto front only at the end of the Algorithm execution', action='store_true', default=False)
 
-    parser.add_argument('-oepps', '--only_end_plot_pareto_solutions', help='Plot Pareto solutions only at the end of the algorithm execution (Requirements: plot_pareto_front or only_end_plot_pareto_front activated; n in [2, 3])', action='store_true', default=False)
+    parser.add_argument('-oepps', '--only_end_plot_pareto_solutions', help='Plot Pareto solutions only at the end of the Algorithm execution (Requirements: plot_pareto_front or only_end_plot_pareto_front activated; n in [2, 3])', action='store_true', default=False)
 
     parser.add_argument('-ge', '--general_export', help='Save Pareto fronts in CSV files, Pareto fronts plots, execution times and arguments files', action='store_true', default=False)
 
@@ -40,7 +40,7 @@ def getArgs():
     ### NSMA ###
     ####################################################
 
-    # For more details, see NSMA.py. Alternatively, the user is referred to the article. #
+    # For more details, see nsma.py. Alternatively, the user is referred to the article. #
 
     parser.add_argument('-NM_ps', '--NM_pop_size', help='NSMA parameter -- Population size', default=100, type=int)
 
@@ -72,7 +72,7 @@ def getArgs():
     For more details, see NSGA-II.py. 
     Alternatively, the user is referred to
         K. Deb, A. Pratap, S. Agarwal and T. Meyarivan,
-        "A fast and elitist multiobjective genetic algorithm: NSGA-II,"
+        "A fast and elitist multiobjective genetic Algorithm: NSGA-II,"
         in IEEE Transactions on Evolutionary Computation, vol. 6, no. 2,
         pp. 182-197, April 2002, doi: 10.1109/4235.996017.
     """
@@ -104,7 +104,7 @@ def getArgs():
     ### Armijo-Type Line Search ###
     ####################################################
 
-    # For more details, see ALS.py. #
+    # For more details, see als.py. #
 
     parser.add_argument('-ALS_a0', '--ALS_alpha_0', help='ALS parameter -- Initial step size', default=1, type=float)
 

@@ -5,7 +5,7 @@
 ![Alt Text](README_Front_Image.gif)
 ## NSMA: A Memetic Procedure for Global Multi-Objective Optimization
 
-Implementation of the NSMA algorithm proposed in
+Implementation of the NSMA Algorithm proposed in
 
 [Lapucci, M., Mansueto, P. & Schoen, F. A memetic procedure for global multi-objective optimization. Math. Prog. Comp. (2022).](
 https://doi.org/10.1007/s12532-022-00231-3)
@@ -36,7 +36,7 @@ In order to execute the code, you need an [Anaconda](https://www.anaconda.com/) 
 Open an Anaconda Prompt in the project root folder and execute the following command.
 
 ```
-conda env create -f Environment_Setups/windows_environment_setup.yml
+conda env create -f Environment_Setups/Windows.yml
 ```
 
 ##### For Linux user
@@ -44,7 +44,7 @@ conda env create -f Environment_Setups/windows_environment_setup.yml
 Open a terminal in the project root folder and execute the following command.
 
 ```
-conda env create -f Environment_Setups/linux_environment_setup.yml
+conda env create -f Environment_Setups/Linux.yml
 ```
 
 ##### For MacOSX user
@@ -52,7 +52,7 @@ conda env create -f Environment_Setups/linux_environment_setup.yml
 Open a terminal in the project root folder and execute the following command.
 
 ```
-conda env create -f Environment_Setups/macosx_environment_setup.yml
+conda env create -f Environment_Setups/MacOSX.yml
 ```
 
 #### Main Packages
