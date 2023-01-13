@@ -80,7 +80,7 @@ Given a terminal (an Anaconda prompt, if you are a Windows user), an example of 
 
 ```python main.py --algorithms NSMA --problems MAN --seeds 16007 --max_time 2 --verbose --plot_pareto_front --plot_pareto_solutions -g --general_export --general_export_pareto_solutions```
 
-The execution results are saved in the ```Execution_Outputs``` folder. In ```General_Utils/Management_Utils.py``` and ```General_Utils/Args_Utils.py```, you can find all the documentation about how the outputs are stored.
+The execution results are saved in the ```Execution_Outputs``` folder. In ```general_utils/management_utils.py``` and ```general_utils/args_utils.py```, you can find all the documentation about how the outputs are stored.
 
 ### Python Library
 
