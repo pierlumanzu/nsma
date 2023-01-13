@@ -101,10 +101,10 @@ class GeneticSurvivalStrategy:
                 For each survived infeasible solution, the associated rank and crowding distance are equal to infinity
         """
 
-        index_not_nan_f = ~np.isnan(np.sum(f_list, axis=1))
-        p_list = p_list[index_not_nan_f, :]
-        f_list = f_list[index_not_nan_f, :]
-        constraint_violations = constraint_violations[index_not_nan_f]
+        index_not_nan_inf_f = np.logical_and(~np.isnan(np.sum(f_list, axis=1)), ~np.isinf(np.sum(f_list, axis=1)))
+        p_list = p_list[index_not_nan_inf_f, :]
+        f_list = f_list[index_not_nan_inf_f, :]
+        constraint_violations = constraint_violations[index_not_nan_inf_f]
 
         n_survive = min(self._pop_size, len(p_list))
 
