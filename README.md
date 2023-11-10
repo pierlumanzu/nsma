@@ -90,7 +90,7 @@ The code is also proposed as [Python package](https://pypi.org/project/nsma/). I
 pip install nsma
 ```
 
-Note that, for a successful installation, you need Python v3.10.6 in your Conda environment.
+Note that, for a successful installation, you need Python v3.9 or higher in your Conda environment.
 
 Below, an example of library usage is proposed.
 
